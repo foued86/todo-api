@@ -81,4 +81,9 @@ const deleteTodo = async (req: Request, res: Response) => {
   }
 };
 
-export { getTodos, getTodoById, createTodo, updateTodo, deleteTodo };
+// Health check
+const healthCheck = (req: Request, res: Response) => {
+  res.status(200).json({ message: "APP is running successfully!" })
+}
+
+export { getTodos, getTodoById, createTodo, updateTodo, deleteTodo, healthCheck };
