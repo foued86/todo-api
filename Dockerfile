@@ -1,4 +1,5 @@
-From node:18-alpine
+FROM node:18-alpine
+LABEL version="1.0"
 
 WORKDIR /home/todo-api
 
@@ -11,4 +12,4 @@ COPY src/ ./src
 
 EXPOSE 8080
 
-CMD ["npm", "run", "dev"]
+CMD ["npm", "start"]

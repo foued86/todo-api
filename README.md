@@ -24,6 +24,7 @@ npm v9.7.1
 
 | HTTP Method | URL | Description |
 | ----------- | ----------- |----------- |
+| GET | http://localhost:8080/api/todos/health-check | check that app is running |
 | GET | http://localhost:8080/api/todos | Get all todos |
 | GET | http://localhost:8080/api/todos/:id | Get one todo by ID (put a valid id) |
 | POST | http://localhost:8080/api/todos | Create a new todo <br/>  `{ "text": "New task" }` |
