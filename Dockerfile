@@ -2,6 +2,7 @@ FROM node:18-alpine
 LABEL version="1.0"
 
 WORKDIR /home/todo-api
+ENV PORT=8080
 
 COPY package*.json .
 COPY tsconfig.json .
