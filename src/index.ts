@@ -14,8 +14,7 @@ app.use("/api/todos", todoRoutes);
 
 mongoose
   .connect(
-    `mongodb://${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`
-    //`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_NAME}${process.env.DB_HOST}/?retryWrites=true&w=majority`
+    `mongodb://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}?directConnection=true&authSource=admin`
   )
   .catch((error) => console.log(error));
 
